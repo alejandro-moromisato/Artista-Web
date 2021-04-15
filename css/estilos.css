@@ -1,0 +1,796 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    overflow-x: hidden;
+}
+
+/* Inicio - Navegacion Menú */
+
+#header{
+    position: relative;
+    width: 100%;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .logo-box{
+    margin-left: 20px;
+}
+
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: #0F2027;
+}
+
+.menu .lista-contenedor{
+    margin-right: 20px;
+}
+
+.menu .lista-contenedor ul{
+    display: flex;
+}
+
+.menu .lista-contenedor ul li{
+    list-style: none;
+}
+
+.menu .lista-contenedor ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px;
+    color: #0F2027;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.menu .lista-contenedor ul li a.activo{
+    background: #c21500;
+    color: #fff;
+}
+
+.menu .lista-contenedor ul li a:hover{
+    background: #c21500;
+    color: #fff;
+}
+
+
+.btn-menu > .fa-bars{
+    display: none;
+}
+
+/* Fin - Navegacion Menú */
+
+/* Inicio - Imagen Header */
+
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-header .bienvenido{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-header .bienvenido h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.img-header .bienvenido hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    margin-top: 5px;
+    border: none;
+}
+
+.img-header .bienvenido p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.img-header .bienvenido > button{
+    width: 180px;
+    height: 40px;
+    background: #ee0979;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-header .bienvenido > button:hover{
+    background: #ff6a00;
+}
+
+/* Fin - Imagen Header */
+
+/* Inicio - Acerca de Nosotros */
+
+.acerca-de{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.acerca-de .info-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.acerca-de .info-container h2{
+    font-size: 50px;
+    font-weight: 400;
+    color: #434343;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.acerca-de .info-container p{
+    text-align: center;
+    font-size: 17px;
+    color: #232526;
+    line-height: 35px;
+    margin: 10px 0;
+}
+
+.acerca-de .info-container .about-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.acerca-de .info-container .about-gallery img{
+    width: 90%;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    object-fit: cover;
+}
+
+.acerca-de .info-container .about-more{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.acerca-de .info-container .about-more button{
+    width: 120px;
+    height: 40px;
+    background: #000046;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition:  0.5s;
+}
+
+
+.acerca-de .info-container .about-more button:hover{
+    background:#1CB5E0;
+}
+
+#texto-oculto{
+    display: none;
+}
+
+/* Fin - Acerca de Nosotros */
+
+/* Inicio - Nuestros Proyectos */
+
+.our-projects{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 120px;
+    background: url(../img/background2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.our-projects .deg-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.8)
+}
+
+.our-projects .ejeZproject{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.our-projects .container-project{
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.our-projects .container-project .project-title{
+    text-align: center;
+    padding:10px;
+    border:2px solid #fff;
+    width: 50%;
+    margin: auto;
+}
+
+.our-projects .container-project .project-title h2{
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.our-projects .container-project .project-title hr{
+    background: #fff;
+    width: 50%;
+    height: 3px;
+    margin: 10px auto;
+}
+
+.our-projects .container-project .project-img{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 80px;
+    padding-bottom: 200px;    
+}
+
+
+.our-projects .container-project .project-img img{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    height: 300px;
+}
+
+/* Fin - Nuestros Proyectos */
+
+/* Inicio - Testimonio */
+
+.testimonios{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.testimonios .testimonios-title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonios .testimonios-title h2{
+    font-size: 50px;
+    font-weight: normal;
+    color: #232526;
+    margin-bottom: 10px;
+}
+
+.testimonios .testimonios-title hr{
+    width: 60%;
+    margin: auto;
+    height: 2px;
+    background: #232526;
+}
+
+.testimonios .box-testimonio{
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonios .box-testimonio .card-testimonio{
+    width: 45%;
+    margin: 20px;
+}
+
+.testimonios .box-testimonio .card-testimonio .card-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.testimonios .box-testimonio .card-testimonio .card-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.testimonios .box-testimonio .card-testimonio .testimonio-texto{
+    border: 2px solid #396afc;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.testimonios .box-testimonio .card-testimonio .testimonio-texto h4{
+    font-size: 30px;
+    font-weight: 400;
+    color: #000046;
+    text-align: center;
+    transition: ease 0.2s;
+}
+
+.testimonios .box-testimonio .card-testimonio .testimonio-texto p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #232526;
+}
+
+.testimonios .box-testimonio .card-testimonio .testimonio-texto:hover{
+    border: 2px solid #43C6AC;
+    
+}
+
+.testimonios .box-testimonio .card-testimonio .testimonio-texto h4:hover{
+    color: #1D2671;
+}
+
+
+/* Fin - Testimonio */
+
+
+/* Inicio - Footer */
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/footer.jpg);
+    background-attachment: fixed;
+    background-position:center ;
+    background-size: cover;    
+}
+
+.footer .deg-footer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+
+.footer .ejeZfooter{
+    position: relative;
+    width: 100%;
+    height: 100%;    
+}
+
+.footer .footer-content{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.footer .footer-content .footer-title{
+    width: 50%;
+    margin: auto;
+    border: 2px solid #fff;
+    padding:15px;
+}
+
+.footer .footer-title h2{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.footer .footer-title hr{
+    background: #fff;
+    height: 2px;
+    margin:auto;
+    width: 80%;
+}
+
+.footer .formulario-content{
+    width: 60%;
+    margin: 50px auto;
+    background: #fff;
+    padding:  30px;
+    border-radius: 50px;
+    border:2px solid #c33764;
+    margin-bottom: 100px;
+}
+
+.formulario-content-activo{
+    border:2px solid #11FFBD !important;
+}
+
+.formulario-content-inactivo{
+    border:2px solid #c33764 !important;
+}
+
+.footer .formulario-content #formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .formulario-content #formulario label{
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    margin: 30px 0 10px 0px;
+}
+
+.footer .formulario-content #formulario input{
+    text-align: center;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    border-radius: 20px;
+    outline: none;
+    border: 1.5px solid #C33764;
+    font-size: 18px;
+    color: black;
+}
+
+.footer .formulario-content #formulario textarea{
+    text-align: center;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    border-radius: 20px;
+    outline: none;
+    border: 1.5px solid #C33764;
+    font-size: 18px;
+    color: black;
+}
+
+.footer .formulario-content #formulario .send{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .formulario-content #formulario .send button{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background:#1D2671;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer .formulario-content #formulario .send button:hover{
+    background: #c31432;
+}
+
+.footer .formulario-content #formulario .mensaje-form{
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer .formulario-content #formulario .mensaje-form p{
+    font-size: 20px;
+    color: black;
+    line-height: 35px;
+    text-align: center;
+}
+
+.footer .footer-text{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #fff; 
+}
+
+.footer .footer-text p{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Fin - Footer */
+
+
+/* Inicio - Ir Arriba */
+
+.go-top{
+    position: fixed;
+    bottom: 100px;
+    right: -100%;
+    width: 50px;
+    background: #fff;
+    border : 2px solid #c21500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+
+.go-top > span:hover{
+    color: #c21500;
+}
+
+.go-top:hover{
+    background: #c21500;
+    color: #fff;
+    border: 2px solid #fff ;
+}
+
+.go-top > span{
+    font-size: 30px;
+}
+
+.go-top > span:hover{
+    color: #fff;
+}
+
+
+/* Fin - Ir Arriba */
+
+/* Inicio - Efecto skew */
+
+.skew-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;    
+}
+
+.skew-arriba{
+    position: absolute;
+    top: 0;
+    left:0;
+    border-width: 10vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    z-index: 1000;
+}
+
+/* Fin - Efecto skew */
+
+/* Inicio -  Media Querys */
+
+@media only screen and (max-width:900px){
+
+    .btn-menu > .fa-bars{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        font-size: 30px;
+        color: black;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .btn-menu > .fa-bars:hover{
+        color: #c31432;
+    }
+
+    .btn-menu > .fa-times{
+        color:#c31432;
+    }
+
+    .menu .lista-contenedor{
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background: #fff;
+        width: 100%;
+        height: cal(100vh -60px);
+    }
+
+    .menu .lista-contenedor .lista{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: 4px solid #c31432;
+    }
+
+    .menu .lista-contenedor .lista li{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid #232526;        
+    }
+
+    .menu .lista-contenedor .lista li a{
+        font-size: 20px;
+        text-align: center;
+        padding:  12px 0;
+    }
+
+    .menu .lista-contenedor .lista li a.activo{
+        background: none;
+        color: #c31432;
+    }
+    .menu .lista-contenedor .lista li a:hover{
+        background: none;
+        color: #c31432;
+    }
+
+}
+
+@media only screen and (max-width:770px){
+
+    /* Img Header */
+
+    .img-header .bienvenido h1{
+        font-size: 40px;
+    }
+
+    .img-header .bienvenido > button{
+        width: 130px;
+        font-size: 20px;
+    }
+
+    /* Nosotros */
+    .acerca-de .info-container .about-gallery{
+        flex-direction: column;    
+        align-items: center;    
+        justify-content: center;
+    }
+
+    .acerca-de .info-container .about-gallery img{
+        width: 95%;
+    }
+
+    .project , .project__card {
+        width: 400px !important;       
+        margin: 0 auto !important; 
+    }
+
+    /* Nuestros Proyectos */
+
+    .our-projects .container-project .project-img{
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (max-width:590px){
+    /* Img Header */
+
+    .img-header .bienvenido h1{
+        font-size: 30px;
+    }
+
+    .img-header .bienvenido hr{
+        width: 100px;
+    }
+
+    .img-header .bienvenido p{
+        font-size: 16px;
+    }
+
+    .img-header .bienvenido > button{
+        width: 100px;
+        font-size: 16px;
+    }
+
+    .our-projects .container-project .project-img{
+        margin: 0 auto;
+    }
+
+}
+
+
+@media only screen and (max-width:890px){
+    /* Testimonios */
+
+    .testimonios .box-testimonio .card-testimonio .card-img img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .testimonios .box-testimonio .card-testimonio{
+        width: 100%;
+    }
+
+    .testimonios .box-testimonio .card-testimonio .testimonio-texto h4{
+        font-size: 25px;
+    }
+
+    .testimonios .box-testimonio .card-testimonio .testimonio-texto p{
+        font-size: 17px;
+        line-height: 35px;
+    } 
+
+
+
+    @media only screen and (max-width:900px){
+        .footer .formulario-content {
+            width:85%;
+            padding: 20px;            
+        }
+
+        .footer .formulario-content #formulario input{
+            width: 100%;
+        }
+
+        .footer .formulario-content #formulario textarea{
+            width: 100%;
+        }    
+
+    }
+}
+
+/* Fin -  Media Querys */
